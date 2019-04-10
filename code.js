@@ -18,3 +18,24 @@ function reverseString(str) {
 }
 
 console.log(reverseString("door"));
+
+
+
+function factorial(num) {
+    let i = 1,
+        j = 1,
+        k = 1;
+
+    while (j <= num) {
+        i = i * j;
+        //  1   2 // 2
+        //  2   3 //6
+        //  6   4 //24
+        // 24   5 //120
+        j++;
+
+    }
+    return i;
+}
+
+console.log(factorial(3));
