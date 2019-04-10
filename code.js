@@ -7,3 +7,14 @@ function convertToFarenheit(celsius) {
 }
 
 console.log(convertToFarenheit(5));
+
+
+function reverseString(str) {
+    console.log(str);
+
+    let arr2 = str.split("");
+    str = arr2.reverse().join("");
+    return str;
+}
+
+console.log(reverseString("door"));
