@@ -46,11 +46,16 @@ let text = "The quick brown fox jumped over the lazy dog";
 console.log(text);
 
 let t = text.split(" ");
-console.log(t);
+console.log(t.length);
 
 let i = 0;
+let t2 = [];
 while (i < t.length) {
     console.log(t[i].length);
-
+    t2[i] = t[i].length;
     i++;
 }
+t2 = t2.sort((a, b) => a - b);
+console.log("Resultado " + t2.join());
+t3 = t2.join();
+console.log(t3[9]);
