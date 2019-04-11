@@ -39,3 +39,18 @@ function factorial(num) {
 }
 
 console.log(factorial(3));
+
+
+
+let text = "The quick brown fox jumped over the lazy dog";
+console.log(text);
+
+let t = text.split(" ");
+console.log(t);
+
+let i = 0;
+while (i < t.length) {
+    console.log(t[i].length);
+
+    i++;
+}
