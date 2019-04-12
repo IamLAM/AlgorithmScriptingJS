@@ -46,15 +46,15 @@ let text = "The quick brown fox jumped over the lazy dog";
 console.log(text);
 
 let t = text.split(" ");
-console.log(t.length);
+var i = 0;
+var vm = 0;
 
-let i = 0,
-    vm = 0;
-let t2 = [];
 while (i < t.length) {
-    if (t[i] < vm)
+    if (t[i].length > vm) {
         vm = t[i].length;
-    console.log("vm: " + vm + " t[" + i + "]:" + t[i] + " Longitud: " + t[i].length);
+        console.log("vm: " + vm + " | t[" + i + "]:" + t[i] + " | Longitud: " + t[i].length);
+    }
+
 
     i++;
 }
