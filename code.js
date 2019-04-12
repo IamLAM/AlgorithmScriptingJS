@@ -82,3 +82,10 @@ while (i2 < text2.length) {
 
     i2++;
 }
+
+//If you want to know if the last letter in a word , you can use 
+let word = "Pilar";
+let target = "r";
+console.log(word.endsWith(target));
+
+console.log(word.indexOf(target));
