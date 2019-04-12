@@ -105,3 +105,15 @@ function repeatString(str, num) {
 }
 
 console.log(repeatString("abc", 3));
+
+
+//identify bools
+bool = 1;
+if (Number.isInteger(bool) != true) {
+    if (bool == true || bool == false)
+        console.log("verdadero");
+    else
+        console.log("falso");
+
+}
+console.log("falso");
