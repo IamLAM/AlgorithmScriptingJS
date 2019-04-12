@@ -48,14 +48,13 @@ console.log(text);
 let t = text.split(" ");
 console.log(t.length);
 
-let i = 0;
+let i = 0,
+    vm = 0;
 let t2 = [];
 while (i < t.length) {
-    console.log(t[i].length);
-    t2[i] = t[i].length;
+    if (t[i] < vm)
+        vm = t[i].length;
+    console.log("vm: " + vm + " t[" + i + "]:" + t[i] + " Longitud: " + t[i].length);
+
     i++;
 }
-t2 = t2.sort((a, b) => a - b);
-console.log("Resultado " + t2.join());
-t3 = t2.join();
-console.log(t3[9]);
