@@ -58,3 +58,27 @@ while (i < t.length) {
 
     i++;
 }
+
+//We need to identify the longest array
+console.log("===========================");
+let text2 = [
+    [4, 5, 1, 3],
+    [13, 27, 18, 26],
+    [32, 35, 37, 39],
+    [1000, 1001, 857, 1]
+];
+
+
+var i2 = 0;
+var vm2 = 0;
+
+while (i2 < text2.length) {
+
+    if (text2[i2].length > vm2) {
+        vm2 = text2[i2].length;
+        console.log("vm: " + vm2 + " | t[" + i2 + "]:" + text2[i2] + " | Longitud: " + text2[i2].length);
+    }
+
+
+    i2++;
+}
