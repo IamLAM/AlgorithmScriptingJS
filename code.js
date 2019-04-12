@@ -89,3 +89,19 @@ let target = "r";
 console.log(word.endsWith(target));
 
 console.log(word.indexOf(target));
+
+//repeat elements
+
+function repeatString(str, num) {
+
+    let i = 0;
+    let s = '';
+    while (i < num) {
+        s += str;
+        i++;
+    }
+
+    return s;
+}
+
+console.log(repeatString("abc", 3));
